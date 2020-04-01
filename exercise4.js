@@ -43,9 +43,8 @@ function dataHandling2(input){
             console.log('desember')
             break
     }
-    console.log(tgl)
-    var tglgabung = tgl.join('-')
-    console.log(tglgabung)
+    console.log(input[3].split('/').sort(function(value1, value2) {return value2 - value1}));
+    console.log(input[3].split('/').join('-'))
     var batasnama = input[1].slice(0,15)
     console.log(batasnama)
 }
