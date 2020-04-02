@@ -1,7 +1,12 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
-    var potkalimat = kalimat.split(' ')
-    return potkalimat.length
+    var jumkal= 1
+    for(i = 0 ; i <kalimat.length-1 ;i++){
+      if (kalimat[i,i+1] == ' '){
+        jumkal++
+      }
+    }
+    return jumkal
   }
   
   // TEST CASES
